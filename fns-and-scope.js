@@ -40,7 +40,8 @@ function getName() {
   //Code Here
   
   function welcome() {
-    
+    var blah = getName();
+    return('Welcome ' + blah);
   }
 
 
@@ -54,19 +55,19 @@ function getName() {
 
   //Answer Here
    
-      The parameters are the aliases for the values that will be passed to the function. The arguments are the actual values.
+  //     The parameters are the aliases for the values that will be passed to the function declarations. The arguments are the actual values when invoking the function.
 
-      function foo( a, b, c ) {}; // a, b, and c are the parameters
+  //     function foo( a, b, c ) {}; // a, b, and c are the parameters
 
-      foo( 1, 2, 3 ); // 1, 2, and 3 are the arguments
+  //     foo( 1, 2, 3 ); // 1, 2, and 3 are the arguments
   
-  
+  // ++
 
-      Parameters (if any) define the method signature. Arguments are values passed into a function.
+  //     Parameters (if any) define the method signature. Arguments are values passed into a function.
       
-      void function(int param1, string param2) //defines the types the function must receive.
+  //     void function(int param1, string param2) //defines the types the function must receive.
       
-      function(1, "Hello World") 1 and "Hello World" are passed as arguments. The parameter receives (if you like) the argument.
+  //     function(1, "Hello World") 1 and "Hello World" are passed as arguments. The parameter receives (if you like) the argument.
 
 
 
@@ -78,6 +79,10 @@ function getName() {
   //Answer Here
 
 
+// null, false, 0(zero), ""(empty string), undefined, Nan
+
+// 
+
 
 
 
@@ -88,12 +93,19 @@ function getName() {
 //Create a function called myName that returns your name
 
   //Code Here
+  
+  function myName() {
+    return "anton bredl";
+  }
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
+  var newMyName = myName;
 
 //Now alert the result of invoking newMyName
+ 
+ alert(newMyName());
 
 
 
@@ -101,8 +113,10 @@ function getName() {
 
 //Next problem
 //Create a function called outerFn which returns an anonymous function which returns your name.
+//Code Here
 
-  //Code Here
+
+
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
