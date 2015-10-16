@@ -81,7 +81,15 @@ function getName() {
 
 // null, false, 0(zero), ""(empty string), undefined, Nan
 
-// 
+// function testTrue(test){
+//    if(test){
+//      console.log(test + " is true");
+//    }
+//    else{
+//      console.log(test + " is false");
+//    }
+// }
+// testTrue(NaN);
 
 
 
